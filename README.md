@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lakshan Perera — Developer Portfolio
 
 A responsive personal portfolio built with React, TypeScript, Vite, and Lucide icons.
@@ -87,3 +88,7 @@ jobs:
       - uses: actions/deploy-pages@v4
         id: deployment
 ```
+=======
+# lakshanbp.github.io
+Personal portfolio website
+>>>>>>> de3b8e890bed5b50f2dfc09d0429b155764db962
