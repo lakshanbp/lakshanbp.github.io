@@ -287,7 +287,6 @@ function App() {
               </article>
             ))}
           </div>
-          <p className="project-note">Project cards are starter examples. Replace their links and descriptions with your actual repositories before publishing.</p>
         </section>
 
         <section className="github-section section-wrap section-block" id="github">
