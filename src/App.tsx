@@ -41,7 +41,7 @@ const projects = [
       "A digital marketplace concept that helps local artisans showcase handmade products, manage listings, and connect with customers.",
     stack: ["React", "TypeScript", "Node.js", "MongoDB"],
     github: "https://github.com/lakshanbp",
-    demo: "",
+    demo: "https://handmade-hub-pro.vercel.app/",
     accent: "mint",
     media: "/handmade-hub.png",
   },
@@ -282,7 +282,7 @@ function App() {
                 </div>
                 <div className="project-links">
                   <a href={project.github} target="_blank" rel="noreferrer"><Github size={16} /> Source code <ArrowUpRight size={14} /></a>
-                  {project.demo && <a href={project.demo} target="_blank" rel="noreferrer">Live demo <ArrowUpRight size={14} /></a>}
+                  {project.demo && <a href={project.demo} target="_blank" rel="noreferrer">Visit website <ArrowUpRight size={14} /></a>}
                 </div>
               </article>
             ))}
