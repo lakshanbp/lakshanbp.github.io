@@ -43,28 +43,31 @@ const projects = [
     github: "https://github.com/lakshanbp",
     demo: "",
     accent: "mint",
+    media: "/handmade-hub.png",
   },
   {
     number: "02",
-    type: "WEB APPLICATION",
-    title: "Job Matching Platform",
+    type: "AI · FINANCE",
+    title: "iMarketPredict",
     description:
-      "A job discovery application concept designed to bring job listings and candidate opportunities into one searchable experience.",
-    stack: ["React", "Node.js", "MongoDB", "REST API"],
+      "An AI-powered market intelligence concept that helps users monitor Japanese stock trends, pricing signals, and forecasting insights in one place.",
+    stack: ["React", "TypeScript", "AI", "Finance"],
     github: "https://github.com/lakshanbp",
     demo: "",
     accent: "violet",
+    media: "/imarketpredict.png",
   },
   {
     number: "03",
     type: "CLOUD · DEVOPS",
-    title: "Cloud Deployment Lab",
+    title: "Azure Deployment Lab",
     description:
-      "A portfolio lab to document deployment experiments, infrastructure learning, automation, and cloud engineering notes.",
-    stack: ["Linux", "Git", "CI/CD", "Cloud"],
+      "A cloud engineering lab focused on Azure deployment workflows, environment automation, and learning how teams ship reliable infrastructure.",
+    stack: ["Azure", "Linux", "Git", "CI/CD"],
     github: "https://github.com/lakshanbp",
     demo: "",
     accent: "blue",
+    media: "/azure-lab.png",
   },
 ];
 
@@ -259,10 +262,16 @@ function App() {
                 <div className="project-card-top">
                   <span className="project-number">{project.number}</span>
                   <span className="project-type">{project.type}</span>
-                  <div className="project-art" aria-hidden="true">
-                    {project.accent === "mint" ? <Monitor size={39} strokeWidth={1.2} /> :
-                     project.accent === "violet" ? <Code2 size={39} strokeWidth={1.2} /> :
-                     <Cloud size={39} strokeWidth={1.2} />}
+                  <div className="project-art" aria-hidden={project.media ? "false" : "true"}>
+                    {project.media ? (
+                      <img className="project-image" src={project.media} alt={`${project.title} preview`} />
+                    ) : (
+                      <>
+                        {project.accent === "mint" ? <Monitor size={39} strokeWidth={1.2} /> :
+                         project.accent === "violet" ? <Code2 size={39} strokeWidth={1.2} /> :
+                         <Cloud size={39} strokeWidth={1.2} />}
+                      </>
+                    )}
                     <span className="art-orbit" />
                   </div>
                 </div>
