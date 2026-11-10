@@ -53,7 +53,7 @@ const projects = [
       "An AI-powered market intelligence concept that helps users monitor Japanese stock trends, pricing signals, and forecasting insights in one place.",
     stack: ["React", "TypeScript", "AI", "Finance"],
     github: "https://github.com/lakshanbp",
-    demo: "",
+    demo: "https://adam-i.jp/en/products/imarket-predict",
     accent: "violet",
     media: "/imarketpredict.png",
   },
